@@ -1,0 +1,14 @@
+{
+  "name": "jogo-cobrinha",
+  "version": "1.0.0",
+  "description": "Jogo da Cobrinha em canvas — lógica pura testável (fila de direções, RNG injetável), recorde local, D-pad para celular. Zero dependências.",
+  "main": "jogo.js",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "wenderson-hgs",
+  "license": "MIT"
+}

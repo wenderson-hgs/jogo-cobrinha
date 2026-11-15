@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jogo da Cobrinha em canvas — lógica pura testada, recorde local, controles por teclado e D-pad. Zero dependências." />
+  <title>🐍 Jogo da Cobrinha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <h1>🐍 Jogo da Cobrinha</h1>
+    <p>setas ou WASD para jogar · espaço pausa · a cobrinha acelera a cada maçã</p>
+  </header>
+
+  <main class="palco">
+    <section class="cartao-jogo">
+      <div class="marcador">
+        <span>🍎 Pontos: <b id="pontos">0</b></span>
+        <span>🏆 Recorde: <b id="recorde">0</b></span>
+      </div>
+
+      <div class="cena">
+        <canvas id="tela" width="480" height="480"></canvas>
+        <div id="overlay" class="overlay">
+          <h2 id="overlay-titulo">🐍 Jogo da Cobrinha</h2>
+          <p id="overlay-texto">Use as setas ou WASD para começar</p>
+          <button id="botao-reiniciar" type="button">Jogar</button>
+        </div>
+      </div>
+
+      <div class="direcoes" aria-label="Controles de direção">
+        <button data-dir="cima" type="button">▲</button>
+        <button data-dir="esquerda" type="button">◀</button>
+        <button data-dir="baixo" type="button">▼</button>
+        <button data-dir="direita" type="button">▶</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Lógica isolada em <code>jogo.js</code> e testada com <code>npm test</code> ·
+    <a href="https://github.com/wenderson-hgs" target="_blank" rel="noopener">github.com/wenderson-hgs</a>
+  </footer>
+
+  <script src="jogo.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
